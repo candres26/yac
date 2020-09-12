@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(231, 231, 231);
+    color: rgb(78, 78, 78);
+}
+
+#container{
+    border: 1px solid red;
+    height: 90vh;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+#window{
+    border: 1px inset gray;
+    height: 90%;
+    margin: 5px 5px;
+    overflow: scroll;
+}

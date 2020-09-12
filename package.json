@@ -1,0 +1,32 @@
+{
+  "name": "yac",
+  "version": "0.0.1",
+  "description": "Chat amazing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", 
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/candres26/yac.git"
+  },
+  "keywords": [
+    "Chat",
+    "nodejs"
+  ],
+  "author": "Andres Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/candres26/yac/issues"
+  },
+  "homepage": "https://github.com/candres26/yac#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
