@@ -7,7 +7,7 @@ let msg = document.getElementById('message');
 let btnSend = document.getElementById('send');
 
 btnSend.addEventListener('click', function(){
-    socketCli.emit('usermessage', {
+    socketCli.emit('message', {
         message: msg.value,
         username: user.value
     });
@@ -17,11 +17,11 @@ msg.addEventListener('keypress', function(){
     socketCli.emit('usertyping', user.value);
 });
 
-socketCli.on('messagesuser', (data) => {
+socketCli.on('messageUser', (data) => {
     actions.innerHTML = '';
     msgs.innerHTML += `<p>
         <strong>${data.username}</strong>: ${data.message}
-    </p>`
+    </p>`;
     msg.value = '';
 });
 
